@@ -1,6 +1,4 @@
-# Exercises
-=========
-## Tape
+# Tape
 
 A non-empty zero-indexed array A consisting of N integers is given. Array A represents numbers on a tape.
 Any integer P, such that 0 < P < N, splits this tape into two non-empty parts: 
