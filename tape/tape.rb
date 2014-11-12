@@ -1,4 +1,5 @@
 def solution(a)
+    a = (1..100000).collect{ rand(100000) } if a.empty?
     return -1 if a.length == 0
 
     m = a.length-1    

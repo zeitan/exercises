@@ -15,6 +15,5 @@ end
 def solution(a)
     a = initialize_array(100000) if a.empty?
     return 1 if a.empty? || ( a.length == 1 && !a.include?(1)) 
-    return 1 unless a.min == 1
     (a.min .. a.max).reduce(0, &:+) - a.reduce(0, &:+)
 end
