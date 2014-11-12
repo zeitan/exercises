@@ -15,11 +15,12 @@ For example, given array A such that:
 the function should return 4, as it is the missing element.
 
 Assume that:
-N is an integer within the range [0..100,000];
-the elements of A are all distinct;
-each element of array A is an integer within the range [1..(N + 1)].
+* N is an integer within the range [0..100,000];
+* the elements of A are all distinct;
+* each element of array A is an integer within the range [1..(N + 1)].
 
 Complexity:
-expected worst-case time complexity is O(N);
-expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
+* expected worst-case time complexity is O(N);
+* expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
+
 Elements of input arrays can be modified.
