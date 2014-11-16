@@ -20,7 +20,7 @@ def self_descriptive_number?(a)
     end
   end
 
-  (a == resultfinal) ? true : false
+  a == resultfinal
 end
 
 def build_self_descriptive_number
