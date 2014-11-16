@@ -7,7 +7,7 @@ def number?(value)
   true if Float(value) rescue false
 end
 
-def cachilupi?(a)
+def self_descriptive_number?(a)
   return false unless number?(a)
   resultfinal = ""
 
@@ -23,20 +23,18 @@ def cachilupi?(a)
   (a == resultfinal) ? true : false
 end
 
-def crear_cachilupis
-  cachilupis=[]
-  MAX_NUMBER.times { |i| cachilupis << i.to_s if cachilupi?(i.to_s) }
-  cachilupis
+def build_self_descriptive_number
+  MAX_NUMBER.times.map { |i|  i.to_s if self_descriptive_number?(i.to_s) }.compact
 end
 
-contents= File.open('cachilupis', 'r') { |f| f.read }
+contents= File.open('self_descriptive_number', 'r') { |f| f.read }
 
 contents.split(/\r?\n|\r/).each  do |value|
 
   if value=="lista"
-    crear_cachilupis.each{ |value| puts "#{value}:si" }
+    build_self_descriptive_number.each{ |value| puts "#{value}:si" }
   else
-    puts "#{value}:" + ((cachilupi?(value)) ? "si" : "no" )
+    puts "#{value}:" + ((self_descriptive_number?(value)) ? "si" : "no" )
   end
 
 end
