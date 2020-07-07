@@ -1,4 +1,4 @@
-package com.company;
+package com.antonbas;
 
 public class LinkedListExt {
     int size = 0;

@@ -1,4 +1,4 @@
-package com.company;
+package com.antonbas;
 
 import java.util.Set;
 import java.util.TreeSet;

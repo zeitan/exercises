@@ -1,4 +1,4 @@
-package com.company;
+package com.antonbas;
 
 import java.util.LinkedList;
 import java.util.HashMap;
